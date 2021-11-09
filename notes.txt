@@ -64,3 +64,9 @@ pip install -r requirements.txt
 ## First time
 git config --global user.name  "your name"
 git config --global user.eamil  "your@mail.com"
+
+
+
+# add files
+
+# create the local copy

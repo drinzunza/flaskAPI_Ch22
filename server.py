@@ -178,6 +178,7 @@ def get_coupons():
 
 
 # get coupon by its code or 404 if not found
+# just a dummy comment
 @app.route("/api/couponCodes/<code>")
 def get_coupon_by_code(code):    
     coupon = db.couponCodes.find_one({"code": code})
@@ -203,7 +204,3 @@ def fill_db():
 # debug true will restart the server automatically
 app.run(debug=True)
 
-
-
-
-# /about

@@ -1,0 +1,66 @@
+# installations
+sudo apt install python3
+sudo apt install python3-pip
+sudo apt install python3-venv
+
+
+# create a virtual env
+python3 -m venv venv
+
+# activate venv:
+venv\Scripts\activate
+
+
+# start server:
+python server.py
+
+
+# install packages
+python -m pip install <package_name>
+
+
+
+# Intall DB on WSL
+sudo apt install mongodb
+
+# status
+sudo service mongodb status
+
+# start
+sudo service mongodb start
+
+
+# Install DB on MAC
+brew tap mongodb/brew
+brew install mongodb-community@5.0
+
+# start service
+brew services start mongodb-community@5.0
+
+# stop service
+brew services stop mongodb-community@5.0
+
+
+# test created from nano editor
+asd;lasd;l
+
+
+
+# Install all dependencies based on the file
+pip install -r requirements.txt
+
+
+
+
+
+
+
+
+
+
+
+### GIT CONFIGURATION
+
+## First time
+git config --global user.name  "your name"
+git config --global user.eamil  "your@mail.com"

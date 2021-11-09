@@ -4,7 +4,6 @@ from pymongo.uri_parser import parse_host
 from mock_data import mock_data
 from flask_cors import CORS # pip intall flask-cors
 from config import db, json_parse
-import json
 from bson import ObjectId
 
 app = Flask(__name__)
@@ -56,8 +55,6 @@ def about():
 #################################################
 ########## API Methods
 #################################################
-
-
 
 @app.route("/api/catalog", methods=["get"])
 def get_catalog():
@@ -178,7 +175,6 @@ def get_coupons():
 
 
 # get coupon by its code or 404 if not found
-# just a dummy comment
 @app.route("/api/couponCodes/<code>")
 def get_coupon_by_code(code):    
     coupon = db.couponCodes.find_one({"code": code})

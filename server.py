@@ -146,6 +146,28 @@ def get_cheapest():
     return json_parse(pivot)
 
 
+#################################
+########     Orders     #########
+#################################
+
+
+@app.route("/api/order", methods=["POST"])
+def save_order():
+    # get the order object from the request
+    order = request.get_json()
+    if order is None:
+        return abort(400, "Nothing to save")
+
+    # validations
+    
+
+    # save the object in the database (orders collection)
+    db.orders.insert_one(order)
+
+
+    # return the stored object
+    return json_parse(order)
+
 
 #################################
 ########  Coupon Codes  #########
@@ -199,4 +221,7 @@ def fill_db():
 # start the server
 # debug true will restart the server automatically
 app.run(debug=True)
+
+
+
 

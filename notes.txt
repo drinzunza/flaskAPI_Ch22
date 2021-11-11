@@ -70,3 +70,4 @@ git config --global user.eamil  "your@mail.com"
 # add files
 
 # create the local copy
+***This text was added with Python code
